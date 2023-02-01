@@ -8,23 +8,38 @@ class ClassCounterOne extends Component {
     super(props)
   
     this.state = {
-       count: 0
+       count: 0,
+       name: ""
     }
   }  
 
   componentDidMount() {
-    // title is the HTML tag <title> that stay on the head of a HTML document
     document.title = `Clicked ${this.state.count} times`
   }
 
+  // here the goal is after the input is filled and the button is clicked we don't want the state name still update for a better performance
   componentDidUpdate(prevProps, prevState) {
-    document.title = `Clicked ${this.state.count} times`
+    if(prevState.count !== this.state.count) {
+        document.title = `Clicked ${this.state.count} times`
+        console.log('Updated document title')
+    }
   }
 
   render() {
+
+    const {count, name} = this.state
+
     return (
       <div>
-        <button onClick={()=>this.setState({ count: this.state.count + 1 })}>
+        <h2>Class Component</h2>
+        <div>
+            <label>Name: </label>
+            <input 
+            type="text" 
+            value={name} 
+            onChange={e => this.setState({name: e.target.value})}/>
+        </div>
+        <button className='button' onClick={()=>this.setState({ count: count + 1 })}>
             Clicked {this.state.count} times
         </button>
       </div>
