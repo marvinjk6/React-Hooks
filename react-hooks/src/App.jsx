@@ -1,10 +1,11 @@
 import './App.css'
-import HookCounterThree from './components/video-04/HookCounterThree'
+import HookCounterFour from './components/video-05/HookCounterFour'
+
 function App() {
 
   return (
     <div className="App">
-      <HookCounterThree />
+      <HookCounterFour />
     </div>
   )
 }
