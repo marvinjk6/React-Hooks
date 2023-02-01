@@ -1,13 +1,11 @@
 import './App.css'
-import ClassCounter from './components/video-02/ClassCounter'
-import HookCounter from './components/video-02/HookCounter'
+import HookCounterTwo from './components/video-03/HookCounterTwo'
 
 function App() {
 
   return (
     <div className="App">
-      <ClassCounter />
-      <HookCounter />
+      <HookCounterTwo />
     </div>
   )
 }
