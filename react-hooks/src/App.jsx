@@ -1,11 +1,13 @@
 import './App.css'
-import HookCounterFour from './components/video-05/HookCounterFour'
+import ClassCounterOne from './components/video-07/ClassCounterOne'
+import HookCounterOne from './components/video-07/HookCounterOne'
 
 function App() {
 
   return (
     <div className="App">
-      <HookCounterFour />
+      {/* <ClassCounterOne /> */}
+      <HookCounterOne />
     </div>
   )
 }
