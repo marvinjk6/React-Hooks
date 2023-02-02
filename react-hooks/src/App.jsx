@@ -1,15 +1,13 @@
 import './App.css'
-import ClassMouse from './components/video-09-10/ClassMouse'
-import HookMouse from './components/video-09-10/HookMouse'
-import MouseContainer from './components/video-09-10/MouseContainer'
+import IntervalClassCounter from './components/video-11/IntervalClassCounter'
+import IntervalHookCounter from './components/video-11/IntervalHookCounter'
 
 function App() {
 
   return (
     <div className="App">
-      {/* <ClassMouse /> */}
-      {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <IntervalClassCounter /> */}
+      <IntervalHookCounter />
     </div>
   )
 }
