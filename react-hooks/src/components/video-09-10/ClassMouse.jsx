@@ -22,6 +22,11 @@ import React, { Component } from 'react'
     window.addEventListener('mousemove', this.logMousePosition)
   }
 
+  // to remove the event when the component disappear in class component
+  componentWillUnmount() {
+    window.removeEventListener('mousemove', this.logMousePosition)
+  }
+
   render() {
     return (
       <div>

@@ -21,6 +21,13 @@ function HookMouse() {
   useEffect(()=>{
     console.log('useEffect called')
     window.addEventListener('mousemove', logMousePosition)
+
+    // the return of useEffect is a function that will be executed when the component disappear
+    return () => {
+        console.log('Component unmouting code')
+        window.removeEventListener('mousemove', logMousePosition)
+    }
+
   }, [])
 
   return (
