@@ -1,12 +1,12 @@
 import './App.css'
-import Counter from './components/video-27/Counter'
+import FocusInput from './components/video-28/FocusInput'
 
 function App() {
 
  
   return (
     <div className="App">
-      <Counter/>
+      <FocusInput />
     </div>
   )
 }
