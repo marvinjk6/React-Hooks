@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-import ConterOne from './components/video-19/ConterOne'
+//import ConterOne from './components/video-19/ConterOne'
+import CounterTwo from './components/video-19/CounterTwo'
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <ConterOne />
+      {/* <ConterOne /> */}
+      <CounterTwo />
     </div>
   )
 }
