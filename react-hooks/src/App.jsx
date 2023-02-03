@@ -1,15 +1,12 @@
 import './App.css'
-//import DataFetchingOne from './components/video-23/DataFetchingOne'
-import DataFetchingTwo from './components/video-23/DataFetchingTwo'
-
+import ParentComponent from './components/video-26/ParentComponent'
 
 function App() {
 
  
   return (
     <div className="App">
-      {/* <DataFetchingOne /> */}
-      <DataFetchingTwo />
+      <ParentComponent />
     </div>
   )
 }
