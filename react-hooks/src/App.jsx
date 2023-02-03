@@ -1,13 +1,13 @@
 import './App.css'
-import DocTitleOne from './components/video-31/DocTitleOne'
-import DocTitleTwo from './components/video-31/DocTitleTwo'
+import CounterOne from './components/video-32/CounterOne'
+import CounterTwo from './components/video-32/CounterTwo'
 
 function App() {
 
   return (
     <div className="App">
-      <DocTitleOne />
-      <DocTitleTwo />
+      <CounterOne />
+      <CounterTwo />
     </div>
   )
 }
