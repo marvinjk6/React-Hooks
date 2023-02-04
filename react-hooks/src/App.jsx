@@ -1,13 +1,11 @@
 import './App.css'
-import CounterOne from './components/video-32/CounterOne'
-import CounterTwo from './components/video-32/CounterTwo'
+import UserForm from './components/video-33/UserForm'
 
 function App() {
 
   return (
     <div className="App">
-      <CounterOne />
-      <CounterTwo />
+      <UserForm />
     </div>
   )
 }
